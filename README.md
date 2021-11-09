@@ -1,4 +1,4 @@
-# Curso React Pro con TS de Fernando Herrera. Proyecto Inicial. 
+# Curso React Pro con TS de Fernando Herrera. 02-Lazy Load / Chunk 
 
 # Getting Started with Create React App
 
