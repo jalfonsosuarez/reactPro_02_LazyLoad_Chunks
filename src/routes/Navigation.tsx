@@ -19,22 +19,22 @@ export const Navigation = () => {
                     <img src={logo} alt="React Logo" />
                     <ul>
                         <li>
-                            <NavLink to="/lazy1" end
+                            <NavLink to="/about" end
                                 className={({ isActive }) =>
                                     (isActive ? "nav-active" : "")
-                                }>Lazy1</NavLink>
+                                }>About</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/lazy2" end
+                            <NavLink to="/users" end
                                 className={({ isActive }) =>
                                     (isActive ? "nav-active" : "")
-                                }>Lazy2</NavLink>
+                                }>Users</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/lazy3" end
+                            <NavLink to="/home" end
                                 className={({ isActive }) =>
                                     (isActive ? "nav-active" : "")
-                                }>Lazy3</NavLink>
+                                }>Home</NavLink>
                         </li>
                     </ul>
                 </nav>
@@ -42,9 +42,9 @@ export const Navigation = () => {
                 {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
                 <Routes>
-                    <Route path="/lazy1" element={ <LazyPage1 /> } />
-                    <Route path="/lazy2" element={ <LazyPage2 /> } />
-                    <Route path="/lazy3" element={ <LazyPage3 /> } />
+                    <Route path="/about" element={ <h1>About</h1> } />
+                    <Route path="/users" element={ <h1>Users</h1> } />
+                    <Route path="/home"  element={ <h1>Home</h1> } />
                 </Routes>
             </div>
         </Router>
